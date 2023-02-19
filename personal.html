@@ -1,0 +1,62 @@
+<html>
+    <head>
+    <script language="javascript">
+       
+       function validate()
+        {
+            var f=1;
+             if(document.form.id1.value==""||document.form.id2.value==""||document.form.id3.value==""||document.form.id4.value==""||document.form.id5.value==""||document.form.dob.value==""||document.form.phno.value==""||document.form.em.value==""||document.form.add.value=="")
+            {
+                f=0;
+            }
+
+              if(f==1)
+              {
+                alert("DETAILS ARE SUBMITTED");
+              }
+              else
+              {
+                alert("INVALID INPUT");
+                document.form.focus();
+              }
+        }
+
+        function p(){   
+            var ph=document.form.phno.value;  
+            if(ph.length<10){  
+                alert("PHONE NUMBER MUST HAVE 10 DIGITS");   
+            }
+            else if(ph.length>10)
+            {
+                alert("PHONE NUMBER MUST HAVE 10 DIGITS");   
+            }
+        }
+  
+    </script>
+
+</head>
+<body>
+    <center><h1>Personal Details</h1></center>
+    <form name="form">
+    <div align="center">
+        FIRST NAME:<input type="text" name="id1">
+        <p>GENDER:</p>
+            <tr><input type="checkbox" value="answer1"/>FEMALE
+            <tr><input type="checkbox" value="answer2"/>MALE
+            <tr><input type="checkbox" value="answer3"/>OTHER<br/>   
+        MIDDLE NAME:<input type="text" name="id2" " ><br/><br/>
+        LAST NAME:<input type="text" name="id3"><br/><br/>
+        FATHER'S NAME:<input type="text" name="id4"><br/><br/>
+        MOTHER'S NAME:<input type="text" name="id5"><br/><br/>
+        DOB:<input type="date" name="dob"><br/><br/>
+        PHONE NO:<input type="tel" name="phno"><br/><br/>
+        EMAIL:<input type="email" name="em" onClick="p()"><br/><br/>
+        ADDRESS:<input type="text" name="add"><br/><br/>
+    </div>
+    <div align="center">
+        <input type="submit" value="submit" onClick="validate()">
+        <input type="reset"  value="clear" >
+    </div>
+</form>
+    </body>
+</html>
