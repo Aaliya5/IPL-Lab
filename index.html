@@ -1,71 +1,26 @@
 <html>
-    <head>
-    <script language="javascript">
-        function validate()
-        {
-            var f=1;
-            if(document.form.id1.value==""||document.form.id2.value==""||document.form.id3.value==""||document.form.id4.value==""||document.form.id5.value==""||document.form.dob.value==""||document.form.phno.value==""||document.form.em.value==""||document.form.add.value==""||document.form.dept.value==""||document.form.b.value==""||document.form.y.value==""||document.form.gpa.value=="")
-            {
-                f=0;
-            }
-
-              if(f==1)
-              {
-                alert("VALID INPUT");
-              }
-              else
-              {
-                alert("INVALID INPUT");
-                document.form.focus();
-
-              }
-        }
-        function years()
-        {
-
-           if(document.form.y.value>=5)
-           {
-            alert("Enter correct year of study");
-
-           }
-        }
-        function g()
-        {
-
-           if(document.form.gpa.value>10)
-           {
-            alert("Enter correct cgpa");
-
-           }
-        }
-    
-    </script>
-
-    <title> INDEX</title>
-</head>
-<body>
-    <center><h1>Student Details</h1></center>
-    <form name="form">
-    <div align="center">
-        FIRST NAME:<input type="text" name="id1"><br/><br/>
-        MIDDLE NAME:<input type="text" name="id2"><br/><br/>
-        LAST NAME:<input type="text" name="id3"><br/><br/>
-        FATHER'S NAME:<input type="text" name="id4"><br/><br/>
-        MOTHER'S NAME:<input type="text" name="id5"><br/><br/>
-        DOB:<input type="date" name="dob"><br/><br/>
-        PHONE NO:<input type="tel" name="phno" "><br/><br/>
-        EMAIL:<input type="email" name="em"><br/><br/>
-        ADDRESS:<input type="text" name="add"><br/><br/>
-        DEAPARTMENT:<input type="text" name="dept" ><br/><br/>
-        BATCH:<input type="number" name="b"><br/><br/>
-        YEAR OF STUDY:<input type="number" name="y" onClick="years()"><br/><br/>
-        CGPA:<input type="number" name="gpa" onClick="g()"><br/><br/>
-       
-    </div>
-    <div align="center">
-        <input type="submit" value="submit" onClick="validate()">
-        <input type="reset"  value="clear" >
-    </div>
-</form>
-    </body>
+    <!DOCTYPE html>
+<html>
+  <head>
+    <title>IPL LAB</title>
+  </head>
+  <body>
+   <h1>Click to view the respective experiment</h1>
+    <button onclick="window.location.href='exp1.html';">
+        EXP.NO.1
+      </button>
+      <button onclick="window.location.href='exp2a.html';">
+         EXP.NO.2a
+       </button>
+       <button onclick="window.location.href='exp2b.html';">
+         EXP.NO.2b
+       </button>
+       <button onclick="window.location.href='exp2c.html';">
+         EXP.NO.2c
+       </button>
+    <button onclick="window.location.href='exp3.html';">
+      EXP.NO.3
+    </button>
+  </body>
+</html>
 </html>
