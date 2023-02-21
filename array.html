@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <br /><b>
+        <script>
+            let a1 = ["mango","apple","banana"];
+            let a2 = ["abc","xyz"];
+            let a3 = ["hat","ball","bat"];
+            document.write("Array 1:" + a1 + "<br>");
+            document.write("Array 2:" + a2 + "<br>");
+            document.write("Array 3:" + a3 + "<br>");
+
+            let a4 = a1.concat(a2, a3);
+            document.write("<br><br>Concatenated array 1, 2,3: " + a4);
+           
+            document.write("<br><br>Sorted array 1: " + a1.sort());
+
+            document.write("<br><br>Index of xyz: " + a2.indexOf("xyz"));
+            
+            document.write("<br><br>Is abc in array2? " + a2.includes("abc"));
+
+            document.write("<br><br>Is array 1 an array? " + Array.isArray(a1));
+
+            document.write("<br><br>Joining the elements of array 3: " + a3.join());
+
+        </script>
+    </b>
+</body>
+
+</html>
