@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <center><h1 style="color:rgb(168, 63, 80);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">TRANSITIONS</h1></center>
+        <center><h1 style="color:rgb(93, 104, 170);font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif">Place the cursor on the respective box to view the transition</h1></center>
+        <style>
+            body {
+                background-color:cadetblue;
+              }
+            div.a{
+                width:100px;
+                height:100px;
+                color:firebrick;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:20px;
+                font-weight:normal;
+                background-color:lavender;
+                transition:width 1s;
+            }
+
+            div.a:hover{
+                width:500px;
+            }
+            div.b{
+                width:100px;
+                height:100px;
+                color:firebrick;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:20px;
+                font-weight:normal;
+                background-color:lavender;
+                transition:height 1s;
+            }
+
+            div.b:hover{
+                height:500px;
+            }
+
+            div.c{
+                width:100px;
+                height:100px;
+                color:firebrick;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:20px;
+                font-weight:normal;
+                background-color:lavender;
+                transition:width 1s,height 1s;
+            }
+
+            div.c:hover{
+                width:500px;
+                height:500px;
+            }
+
+            div.d {
+                width:100px;
+                height:100px;
+                color:firebrick;
+                font-family:Arial, Helvetica, sans-serif;
+                font-size:20px;
+                font-weight:normal;
+                background-color:lavender;
+                transition:width 1s,height 1s,transform 1s;
+              }
+              
+            div.d:hover {
+                width: 500px;
+                height: 500px;
+                transform: rotate(140deg);
+              }
+
+
+
+        </style>
+    </head>
+    <body>
+        <center><div class="a">width</div></center><br><br>
+        <center><div class="b">height</div></center><br><br>
+        <center><div class="c">width and height </div></center><br><br>
+        <center><div class="d">transition with rotation</div></center><br><br>
+        <center><button onclick="window.location.href='transformations.html';">
+        CLICK TO VIEW TRANSFORMATIONS
+        </button></center><br/><br/>
+        <center><button onclick="window.location.href='animations.html';">
+        CLICK TO VIEW ANIMATIONS
+        </button></center><br/><br/>
+    </body>
+</html>
