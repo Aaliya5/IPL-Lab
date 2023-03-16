@@ -1,0 +1,38 @@
+<html>
+<head>
+
+    <title>Banking Application</title>
+    <script>
+        function validate() {
+            var flag = 1;
+            if(document.forms["myform"]["uname"].value == "" || document.forms["myform"]["pwd"].value == "") {
+                flag = 0;
+            }
+            if(flag == 0) {
+                alert("INVALID DATA");
+            }
+        }
+    </script>
+</head>
+<body>
+        <div align = "center">
+            <h1>BANKING APPLICATION</h1>
+            <h1>LOGIN PAGE</h1>
+        </div>
+        <form name = "myform" action="acc.html">
+            <div align="center">
+                <p class = "tablerow">
+                    <p class = "tablecell">USERNAME: </p>
+                    <input type = "text" size = "40" name = "uname" > <br><br>
+                </p>
+                <p class = "tablerow">
+                    <p class = "tablecell">PASSWORD: </p>
+                    <input type = "password" size = "40" name = "pwd" > <br><br>
+                </p>
+            </div>
+                <div align = "center">
+                    <input type = "submit"  name = "done" onClick = 'validate()'  > 
+                </div>
+            </form>  
+</body>
+</html>
