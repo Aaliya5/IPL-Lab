@@ -11,7 +11,7 @@ function validate() {
     var num = /^[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]$/;
     var mail = /^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$/;
     var dob = /^([0-3][1-9]|[1-3][0-9])-([0-1][1-9]|[1][0-9])-[0-9]{2}$/;
-    var sex = /^(M|F|E)$/;
+    var g = /^(M|F|E)$/;
     var aad = /^[0-9]{12}$/;
     var pan = /^[0-9]{10}$/;
 
@@ -43,7 +43,7 @@ function validate() {
         alert('Check your BirthDate');
         flag = 0;
     }
-    if (!document.forms["myform"]["sex"].value.match(sex)) {
+    if (!document.forms["myform"]["g"].value.match(g)) {
         alert('Check your gender');
         flag = 0;
     }
