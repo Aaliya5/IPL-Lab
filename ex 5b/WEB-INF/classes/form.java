@@ -8,16 +8,13 @@ public class form extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head>");
-        out.println("<title>Welcome</title>");
         out.println("</head>");
         out.println("<body>");
         out.println("<form action='./first' method='get'>");
         out.println("<label for='name'>Name:</label>");
         out.println("<input type='text' id='name' name='name'><br>");
         out.println("<label for='location'>Location:</label>");
-        out.println("<input type='text' id='location' name='location'><br>");
-        out.println("<label for='age'>Age:</label>");
-        out.println("<input type='hidden' id='age' name='age'><br>");
+        out.println("<input type='hidden' id='location' name='location'><br>");
         out.println("<input type='submit' value='Submit'>");
         out.println("</form>");
         out.println("</body>");
