@@ -1,0 +1,25 @@
+<web-app>
+        <servlet-name>hiddenForms</servlet-name>
+        <url-pattern>/hiddenforms</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>
+            name</servlet-name>
+        <servlet-class>name</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>name</servlet-name>
+        <url-pattern>/name</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>
+            both</servlet-name>
+        <servlet-class>both</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>both</servlet-name>
+        <url-pattern>/both</url-pattern>
+    </servlet-mapping>
+</web-app>
