@@ -15,12 +15,7 @@ public class HitCounter extends HttpServlet {
 
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-
-      // Set response content type
       response.setContentType("text/html");
-
-      // This method executes whenever the servlet is hit 
-      // increment hitCount 
       hitCount++; 
       PrintWriter out = response.getWriter();
       String title = "Total Number of Hits";
@@ -31,8 +26,5 @@ public class HitCounter extends HttpServlet {
         out.println("</body>");
         out.println("</html>");
    
-   public void destroy() { 
-      // This is optional step but if you like you
-      // can write hitCount value in your database.
-   } 
+   }
 } 
