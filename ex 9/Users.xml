@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<users>
+  <user id="1">
+    <name>abc</name>
+    <dept>cse</dept>
+    <year>3</year>
+    <cgpa>8</cgpa>
+  </user>
+  <user id="2">
+    <name>xyz</name>
+    <dept>ece</dept>
+    <year>3</year>
+    <cgpa>9</cgpa>
+  </user>
+  <user id="3">
+    <name>def</name>
+    <dept>mech</dept>
+    <year>4</year>
+    <cgpa>8.6</cgpa>
+  </user>
+  <user id="4">
+    <name>lmn</name>
+    <dept>eee</dept>
+    <year>3</year>
+    <cgpa>8</cgpa>
+  </user>
+  <user id="5">
+    <name>hij</name>
+    <dept>it</dept>
+    <year>2</year>
+    <cgpa>9.2</cgpa>
+  </user>
+ </users>
+
