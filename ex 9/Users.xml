@@ -11,7 +11,7 @@
     <dept>ece</dept>
     <year>3</year>
     <cgpa>9</cgpa>
-  </user>
+  </user>  
   <user id="3">
     <name>def</name>
     <dept>mech</dept>
